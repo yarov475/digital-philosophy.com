@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>digital-philosophy.com</title>
+
+		<!-- update the version number as needed -->
+		<script defer src="/__/firebase/10.5.0/firebase-app-compat.js"></script>
+		<!-- include only the Firebase features as you need -->
+		<script defer src="/__/firebase/10.5.0/firebase-auth-compat.js"></script>
+		<script
+			defer
+			src="/__/firebase/10.5.0/firebase-database-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.5.0/firebase-firestore-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.5.0/firebase-functions-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.5.0/firebase-messaging-compat.js"
+		></script>
+		<script defer src="/__/firebase/10.5.0/firebase-storage-compat.js"></script>
+		<script
+			defer
+			src="/__/firebase/10.5.0/firebase-analytics-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.5.0/firebase-remote-config-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.5.0/firebase-performance-compat.js"
+		></script>
+		<!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+		<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Digital-philosophy.com</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<p class="container wrapper">
+			site digital-philosophy.com projects at the interface of the humanitiees
+			and computer sciense, open for partisipation. data sonification. In this
+			project we deals with diaris of World War II. Emotional content of this
+			texts is analysed by means of apropriate algoritms. The rsults of this
+			analysis are given in numeric form. On the base of this numbers we create
+			an algorithm produsing musical composition.It alows us to create music
+			representing historical events in a direct form. Experiense of listening
+			of those composition gives the listener cye chanse to enteract with
+			historical event. Meanwile, listening to conventionally created
+			composition makes us interact with the author. Overall this project is an
+			attempt to overcame memetic nature of art.
+
+			<br />
+			#Games Development in philosphy. Game development gives a unic oportunuty
+			to model abstract philosophical consepts. This alows the researcher to
+			think out of the box and consequently arive at anortodox conclusions. Our
+			project also makes it possible to create education games wierld public.
+			#этика искуственног интеллекта. The project is aimed at the creation of
+			Web Ontology on Ethics of Arteficial Intelegense which would combine both
+			sciense and art. #Dear colegues, Your are at the site of the project
+			"Digital Philosophy" we are enjoy the suport of the Department of
+			Antropology of the Institute of Philosophy at Saint Petersburg State
+			University and municipal youth center "Ochta". Hear you will find the
+			information about research in the field of Digital Philosophy. We also
+			offer a ofline course which miqhte help to master techiques of programming
+			in general and digital philosophy in particular. If you are interested in
+			this field you can participate in lectures and creative projects.
+			<br />
+			*Digital philosophy in our project deals with follow issues. 1. Pro 2.
+			Status of traditional philosophical questions in lite of techologies. 3.
+			Dewelpment of digiatl tools for more oficcial philosophical studies. ____
+			If you would like ti help
+		</p>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const loadEl = document.querySelector("#load");
+				// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+				// // The Firebase SDK is initialized and available here!
+				//
+				// firebase.auth().onAuthStateChanged(user => { });
+				// firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+				// firebase.firestore().doc('/foo/bar').get().then(() => { });
+				// firebase.functions().httpsCallable('yourFunction')().then(() => { });
+				// firebase.messaging().requestPermission().then(() => { });
+				// firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+				// firebase.analytics(); // call to activate
+				// firebase.analytics().logEvent('tutorial_completed');
+				// firebase.performance(); // call to activate
+				//
+				// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+				try {
+					let app = firebase.app();
+					let features = [
+						"auth",
+						"database",
+						"firestore",
+						"functions",
+						"messaging",
+						"storage",
+						"analytics",
+						"remoteConfig",
+						"performance",
+					].filter((feature) => typeof app[feature] === "function");
+					loadEl.textContent = `Firebase SDK loaded with ${features.join(
+						", "
+					)}`;
+				} catch (e) {
+					console.error(e);
+					loadEl.textContent =
+						"Error loading the Firebase SDK, check the console.";
+				}
+			});
+		</script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
